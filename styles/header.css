@@ -1,0 +1,140 @@
+/**
+ * ==========================================================================
+ * HEADER.CSS
+ * Layout for the site header, navigation, search bar, and action icons.
+ * ==========================================================================
+ */
+
+header {
+    width: 100%;
+    background-color: var(--color-bg);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Top utility bar (Account, Track Order, Support & Contact) */
+header .top {
+    width: 100%;
+    display: flex;
+    height: 3rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 var(--padding-x); 
+    border-bottom: 0.5px solid var(--color-gray-2);
+}
+
+header .top .left {
+    display: flex;
+    gap: 1.5rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+header .top .right {
+    font-size: 0.8rem;
+    color: var(--color-gray-1);
+}
+
+/* Middle main bar (Logo, Search box, Action icons) */
+header .mid {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 6rem;
+    align-items: center;
+    padding: 0 var(--padding-x);
+    border-bottom: 0.5px solid var(--color-gray-2);
+}
+
+header .mid .logo {
+    height: 2.2rem;
+    display: flex;
+    align-items: center;
+}
+
+header .mid .logo img {
+    max-height: 100%;
+    width: auto;
+}
+
+/* Search bar styling */
+header .mid .search {
+    display: flex;
+    align-items: stretch;
+    border: 1px solid var(--color-gray-2);
+    border-radius: 4px;
+    overflow: hidden;
+    background-color: var(--color-bg);
+}
+
+header .mid .search input {
+    padding: 0.6rem 1rem;
+    font-size: 0.85rem;
+    width: 280px;
+}
+
+header .mid .search select {
+    border-left: 1px solid var(--color-gray-2);
+    padding: 0 0.75rem;
+    font-size: 0.85rem;
+    cursor: pointer;
+}
+
+header .mid .search button {
+    border: none;
+    background-color: var(--color-primary);
+    color: #fff;
+    padding: 0 1.25rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+header .mid .search button:hover {
+    background-color: var(--color-secondary);
+    color: var(--color-text);
+}
+
+/* Action buttons / icons */
+header .buttons {
+    display: flex;
+    gap: 1.25rem;
+    align-items: center;
+}
+
+header .buttons img {
+    width: 1.4rem;
+    height: 1.4rem;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+
+header .buttons img:hover {
+    opacity: 0.7;
+}
+
+/* Dynamic notification badge (Ready for PHP counter like <?php echo $cart_count; ?>) */
+header .buttons .icon {
+    position: relative;
+}
+
+header .buttons .icon::before {
+    content: "1";
+    position: absolute;
+    top: -6px;
+    right: -8px;
+    font-size: 0.65rem;
+    font-weight: 700;
+    display: grid;
+    place-items: center;
+    width: 1rem;
+    height: 1rem;
+    color: #fff;
+    background-color: var(--color-primary);
+    border-radius: 999px;
+}
+
+.logo{
+    width: 200px;
+    height: 200px;
+}

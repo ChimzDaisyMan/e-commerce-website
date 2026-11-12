@@ -1,0 +1,10 @@
+
+:root {
+    --color-primary: #f39c12;      /* Warm orange brand color */
+    --color-secondary: #f1c40f;    /* Bright yellow hover accent */
+    --color-text: #000000;         /* Primary readable text */
+    --color-gray-1: #999999;       /* Muted text and placeholders */
+    --color-gray-2: #c3c3c3;       /* Borders and dividers */
+    --color-bg: #ffffff;           /* Clean background */
+    --padding-x: 4rem;             /* Balanced horizontal padding */
+}
