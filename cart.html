@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/variables.css">
+    <title>Your Cart | Zed Shopping Cart</title>
+</head>
+<body>
+    <!-- Header (Same as index.html — ready to extract into header.php later) -->
+    <header>
+        <div class="top">
+            <div class="left">
+                <a href="#">Account</a>
+                <a href="#">Track Order</a>
+                <a href="#">Support</a>
+            </div>
+            <div class="right">
+                +260 977 5735 80 | contact: chimzhashpak96@gmail.com
+            </div>
+        </div>
+
+        <div class="mid">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="styles/img/Code_Generated_Image.png" class="logo" alt="Zed Shopping Cart Logo">
+                </a>
+            </div>
+
+            <div class="search">
+                <input type="text" placeholder="Search products here...">
+                <select>
+                    <option value="all">All Categories</option>
+                    <option value="suiting">Suits & Formal</option>
+                    <option value="footwear">Footwear & Sneakers</option>
+                    <option value="accessories">Watches & Audio</option>
+                </select>
+                <button type="button">Search</button>
+            </div>
+
+            <div class="buttons">
+                <a href="#"><img src="styles/img/heart-regular-full.svg" alt="Wishlist"></a>
+                <a href="cart.html" class="icon"><img src="styles/img/shopping-cart.svg" alt="Cart"></a>
+                <a href="#"><img src="styles/img/user.svg" alt="User Account"></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Cart Content -->
+    <main class="cart-container">
+        <h1 class="cart-title">Your Shopping Cart</h1>
+
+        <div class="cart-layout">
+            
+            <!-- Left: Cart Items Table (Ready for PHP foreach loop) -->
+            <div class="cart-items">
+                <table class="cart-table">
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Subtotal</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Sample Item 1 -->
+                        <tr>
+                            <td>
+                                <div class="cart-product">
+                                    <img src="styles/img/men suit.jpg" alt="Executive Men Suit">
+                                    <div>
+                                        <div class="cart-product-name">Executive Men Suit</div>
+                                        <div class="cart-product-meta">Category: Suits & Formal</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>K 2,499.00</td>
+                            <td>
+                                <div class="qty-control">
+                                    <button type="button">-</button>
+                                    <input type="text" value="1" readonly>
+                                    <button type="button">+</button>
+                                </div>
+                            </td>
+                            <td><strong>K 2,499.00</strong></td>
+                            <td>
+                                <button type="button" class="remove-btn">Remove</button>
+                            </td>
+                        </tr>
+
+                        <!-- Sample Item 2 -->
+                        <tr>
+                            <td>
+                                <div class="cart-product">
+                                    <img src="styles/img/rolex watch.jpg" alt="Chronograph Gold Watch">
+                                    <div>
+                                        <div class="cart-product-name">Chronograph Gold Watch</div>
+                                        <div class="cart-product-meta">Category: Accessories</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>K 1,850.00</td>
+                            <td>
+                                <div class="qty-control">
+                                    <button type="button">-</button>
+                                    <input type="text" value="1" readonly>
+                                    <button type="button">+</button>
+                                </div>
+                            </td>
+                            <td><strong>K 1,850.00</strong></td>
+                            <td>
+                                <button type="button" class="remove-btn">Remove</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Right: Order Summary Box -->
+            <aside class="order-summary">
+                <h3>Order Summary</h3>
+
+                <div class="summary-row">
+                    <span>Subtotal (2 items)</span>
+                    <span>K 4,349.00</span>
+                </div>
+
+                <div class="summary-row muted">
+                    <span>Delivery (Lusaka)</span>
+                    <span>K 50.00</span>
+                </div>
+
+                <div class="summary-total">
+                    <span>Total</span>
+                    <span>K 4,399.00</span>
+                </div>
+
+                <a href="#" class="checkout-btn">Proceed to Checkout</a>
+                <a href="index.html" class="continue-link">← Continue Shopping</a>
+            </aside>
+
+        </div>
+    </main>
+
+    <!-- Footer (Same as index.html — ready to extract into footer.php later) -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>Zed Shopping Cart</h4>
+                <p>Your one-stop destination for sharp menswear, luxury watches, sneakers, and everyday accessories.</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <a href="#">My Account</a>
+                <a href="#">Track Order</a>
+                <a href="cart.html">Shopping Cart</a>
+                <a href="#">Wishlist</a>
+            </div>
+
+            <div class="footer-col">
+                <h4>Customer Support</h4>
+                <p>Phone: +260 977 5735 80</p>
+                <a href="mailto:chimzhashpak96@gmail.com">Email: chimzhashpak96@gmail.com</a>
+                <p>Mon – Sat: 8:00 AM – 6:00 PM</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            © 2026 Zed Shopping Cart. All Rights Reserved.
+        </div>
+    </footer>
+</body>
+</html>
